@@ -18,13 +18,12 @@ def is_enabled(value, default):
         return default
       
 # Bot Information
-API_ID = int(environ.get("27382220", ""))
-API_HASH = environ.get("35ad32b6edf3081dc426a1c9a6937e9d
-", "")
+API_ID = int(environ.get("21173193", ""))
+API_HASH = environ.get("98170d545a5aa8eaf3c9c71df89959b5", "")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7231639318 6966710236').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '696671Tru').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "") # without @
 PORT = environ.get("PORT", "8080")
 
@@ -47,17 +46,17 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "1002369757789"))
 
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 
 # Enable - True or Disable - False
-PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
+PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), False)
 
 # Verify Info :-
-VERIFY_MODE = bool(environ.get('VERIFY_MODE', True)) # Set True or False
+VERIFY_MODE = bool(environ.get('VERIFY_MODE', False)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 SHORTLINK_URL = environ.get("SHORTLINK_URL", "api.shareus.io") # shortlink domain without https://
